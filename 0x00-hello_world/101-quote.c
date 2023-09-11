@@ -1,26 +1,18 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - entry
+ * main - Entry point
  *
- * Description: single numbers base of 16
+ * Description: print a qoute using write function
+ * ssize_t write(int fd, const void *buf, size_t count);
  *
- * Return: always  0 (success)
+ * Return: 1 (error)
 */
 
+
 int main(void)
-{
-      int digit = 48; /*48; decimal rep of 0*/
+{	char quo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-      while (digit <= 102)
-      {
-      putchar(digit);
-
-										if (digit == 57)
-										digit += 39;
-										digit++;
-										}
-      putchar('\n');
-
-      return (0);
+		write(1, quo, 59);
+		return (1);
 }
