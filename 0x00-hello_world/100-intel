@@ -1,24 +1,2 @@
-
-#include <stdio.h>
-
-/**
- * main - entry
- *
- * Description: print tebahpla
- *
- * Return: always  0 (success)
-*/
-
-int main(void)
-{
-	char ch = 'z';
-
-	while (ch >= 'a')
-	{
-		putchar(ch);
-		ch--;
-	}
-	putchar('\n');
-
-	return (0);
-}
+#!/bin/bash
+gcc -S  -masm=intel $CFILE -o `echo $CFILE | cut -d. -f1`.s
