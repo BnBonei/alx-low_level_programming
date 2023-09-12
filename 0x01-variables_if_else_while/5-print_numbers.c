@@ -3,20 +3,20 @@
 /**
  * main - entry
  *
- * Description: printf all alphabrt
+ * Description: single numbers base of 10
  *
  * Return: always  0 (success)
 */
 
 int main(void)
 {
-	char ch = 'a';
+	char digit = 0;
 
-	while (ch <= 'z')
+	while (digit <= 9)
 	{
-		putchar(ch);
+		printf("%i", digit);
 
-		ch++;
+		digit++;
 
 	}
 	putchar('\n');
