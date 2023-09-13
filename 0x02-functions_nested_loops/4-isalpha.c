@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * -isalpha - check if character is a letter
- *            both lowercase or uppercase
+ * _isalpha - check if character is a letter
  *
- * @c: takes input from other functions.
+ * @c: chack input of function
  *
- * Return: 1 is c if true else 0
+ * Return: return 1 if c is lowercase
+ *	otherwise always 0 (success)
 */
 
 int _isalpha(int c)
